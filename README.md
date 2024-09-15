@@ -25,7 +25,7 @@ To get started with Care-connect, follow these installation steps:
 
     1. Clone the repository to your local machine:
       
-          git clone https://github.com/MohsinRazaKhanSipra/djangoehr.git
+          git clone
           
     2. Create a virtual environment and activate it:
       
