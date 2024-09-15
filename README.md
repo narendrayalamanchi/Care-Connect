@@ -18,3 +18,35 @@ Medical Records Management: Store and manage electronic health records (EHR) inc
 
 ## Doctors 
  Doctors can login check their patient appointments.
+
+# Installation
+
+To get started with Care-connect, follow these installation steps:
+
+    1. Clone the repository to your local machine:
+      
+          git clone https://github.com/MohsinRazaKhanSipra/djangoehr.git
+          
+    2. Create a virtual environment and activate it:
+      
+        python -m venv venv
+        .\venv\Scripts\activate
+        
+    3. Install project dependencies:
+      
+      pip install -r requirements.txt
+      
+    4. Configure your database settings in the settings.py file.
+      
+       Apply database migrations:
+       
+       python manage.py migrate
+    
+    5. Create a superuser account:
+      
+       python manage.py createsuperuser
+     
+    6. Start the development server:
+       
+       python manage.py runserver
+
