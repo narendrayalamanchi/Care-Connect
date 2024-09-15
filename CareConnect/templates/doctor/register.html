@@ -1,0 +1,42 @@
+{% extends "receiptionist/base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+<style>
+  /* Center the form horizontally and vertically */
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Set the background color to black */
+  }
+
+  form {  
+    text-align: left;
+    border: 2px solid white; /* Border around the form */
+    padding: 20px; /* Padding inside the border */
+    background-color: lightgrey; /* Background color inside the border */
+    border-radius: 10px; /* Border radius */
+    max-width: 400px; /* Maximum width of the form */
+  }
+
+  h2 {
+    text-align: center; /* Center the heading */
+  }
+</style>
+
+<h2>Patient information</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <br>
+  <br>
+  <br>
+
+  <button type="submit" style="background-color: #5c3bdf;">Log In</button>
+</form>
+{% endblock %}
